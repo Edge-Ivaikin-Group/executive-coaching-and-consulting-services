@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Elevate Your Leadership | Premium Executive Coaching & Consulting</title>
-    <meta name="description" content="Unlock your full potential with personalized executive coaching and consulting services designed for visionary leaders.">
-    <meta name="keywords" content="Executive Coaching, Leadership Development, Business Consulting, High-Performance Coaching, Professional Growth">
+    <title>Timothy Ivaikin | Global Tech Leadership & Executive Consulting</title>
+    <meta name="description" content="Leverage the expertise of Timothy Ivaikin, a seasoned global tech leader, for executive coaching and strategic innovation consulting.">
+    <meta name="keywords" content="Timothy Ivaikin, Executive Coaching, Tech Leadership, Strategic Consulting, AI Integration, Global Business Strategy">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- External CSS and Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -13,30 +13,21 @@
             margin: 0;
             font-family: 'Roboto', sans-serif;
             color: #333;
+            background-color: #f5f5f5;
         }
         header {
-            background-image: url('https://yourdomain.com/images/header-bg.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.svg') no-repeat center center;
             background-size: cover;
-            background-position: center;
             height: 100vh;
             color: #fff;
             text-align: center;
             position: relative;
         }
-        header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
         header .content {
-            position: relative;
-            z-index: 1;
+            position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         header h1 {
             font-size: 48px;
@@ -58,24 +49,51 @@
             padding: 60px 20px;
             max-width: 1200px;
             margin: auto;
+            background-color: #fff;
+            margin-bottom: 20px;
         }
-        .services, .testimonials, .contact {
+        .about, .services, .testimonials, .contact {
+            margin-bottom: 60px;
+        }
+        .about h2, .services h2, .testimonials h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .about p, .services p, .testimonials p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .services .service-list {
             display: flex;
             flex-wrap: wrap;
             gap: 40px;
         }
-        .services .service, .testimonials .testimonial {
+        .services .service {
             flex: 1 1 calc(33% - 40px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 30px;
             border-radius: 5px;
-            background-color: #fff;
+            background-color: #f9f9f9;
+            text-align: center;
         }
-        .services .service h3, .testimonials .testimonial h3 {
+        .services .service h3 {
             margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .testimonials .testimonial-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .testimonials .testimonial {
+            flex: 1 1 calc(33% - 40px);
+            padding: 30px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-style: italic;
         }
         .contact form {
-            flex: 1 1 100%;
+            max-width: 600px;
+            margin: auto;
             display: flex;
             flex-direction: column;
         }
@@ -83,8 +101,9 @@
             margin-bottom: 20px;
             padding: 15px;
             font-size: 16px;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             border-radius: 5px;
+            width: 100%;
         }
         .contact form .btn {
             align-self: flex-start;
@@ -103,6 +122,10 @@
             padding: 40px 20px;
             text-align: center;
         }
+        footer a {
+            color: #e67e22;
+            text-decoration: none;
+        }
         @media (max-width: 768px) {
             header h1 {
                 font-size: 36px;
@@ -120,63 +143,85 @@
 
 <header>
     <div class="content">
-        <h1>Elevate Your Leadership</h1>
-        <p>Premium Executive Coaching & Consulting Services</p>
+        <h1>Timothy Ivaikin</h1>
+        <p>Global Tech Leadership & Executive Consulting</p>
         <a href="#contact" class="btn">Schedule a Consultation</a>
     </div>
 </header>
 
 <section class="about">
-    <h2>About Us</h2>
-    <p>With over 20 years of experience in executive coaching and business consulting, we empower leaders to unlock their full potential and drive organizational success. Our personalized approach ensures that each client receives strategies tailored to their unique challenges and goals.</p>
+    <h2>About Timothy</h2>
+    <p>
+        With over 15 years of experience in global tech leadership roles, including Chief Technology Officer positions and spearheading initiatives like the "Discover Culture" project for the KSA Ministry of Culture, Timothy Ivaikin empowers executives to unlock their full potential. His expertise lies in strategic vision development, AI integration, and scaling businesses sustainably.
+    </p>
 </section>
 
 <section class="services">
-    <h2>Our Services</h2>
-    <div class="service">
-        <h3>Executive Coaching</h3>
-        <p>One-on-one coaching sessions focused on leadership development, strategic thinking, and performance optimization.</p>
-    </div>
-    <div class="service">
-        <h3>Leadership Development Programs</h3>
-        <p>Custom-designed programs to cultivate leadership skills across your organization's management team.</p>
-    </div>
-    <div class="service">
-        <h3>Business Strategy Consulting</h3>
-        <p>Expert advice on business growth strategies, market expansion, and operational efficiency.</p>
+    <h2>Executive Coaching & Consulting Services</h2>
+    <div class="service-list">
+        <div class="service">
+            <h3>Executive Leadership Coaching</h3>
+            <p>Personalized coaching to develop visionary leaders capable of driving global business growth.</p>
+        </div>
+        <div class="service">
+            <h3>Tech-Driven Strategy Consulting</h3>
+            <p>Integrate cutting-edge AI and technology solutions into your business model for competitive advantage.</p>
+        </div>
+        <div class="service">
+            <h3>Board Advisory Coaching</h3>
+            <p>Guidance for executives aiming to enhance their impact on corporate boards and governance.</p>
+        </div>
+        <div class="service">
+            <h3>Wealth & Passive Income Mastery</h3>
+            <p>Strategies to build autonomous systems that generate consistent, high-income streams.</p>
+        </div>
+        <div class="service">
+            <h3>Work-Life Integration for Executives</h3>
+            <p>Achieve balance in high-pressure roles without compromising on personal well-being.</p>
+        </div>
+        <div class="service">
+            <h3>Performance Optimization</h3>
+            <p>Enhance efficiency through task management and process improvement techniques.</p>
+        </div>
     </div>
 </section>
 
 <section class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-        <h3>John Doe, CEO of XYZ Corp</h3>
-        <p>"Their coaching transformed my leadership style, resulting in a 30% increase in team productivity."</p>
-    </div>
-    <div class="testimonial">
-        <h3>Jane Smith, COO of ABC Ltd</h3>
-        <p>"The strategic insights provided were instrumental in expanding our business into new markets."</p>
-    </div>
-    <div class="testimonial">
-        <h3>Michael Lee, Director at DEF Inc</h3>
-        <p>"Exceptional coaching that delivers tangible results. Highly recommended for any executive."</p>
+    <h2>What Leaders Are Saying</h2>
+    <div class="testimonial-list">
+        <div class="testimonial">
+            <p>"Timothy's strategic insights transformed our leadership approach, resulting in unprecedented growth."</p>
+            <strong>- CEO, Global Tech Firm</strong>
+        </div>
+        <div class="testimonial">
+            <p>"His expertise in AI integration propelled our business into new markets with innovative solutions."</p>
+            <strong>- CTO, Multinational Corporation</strong>
+        </div>
+        <div class="testimonial">
+            <p>"The executive coaching sessions were a game-changer for our board's effectiveness and governance."</p>
+            <strong>- Board Chair, Industry Leader</strong>
+        </div>
     </div>
 </section>
 
 <section class="contact" id="contact">
-    <h2>Get in Touch</h2>
-    <form action="https://yourdomain.com/submit-form" method="post">
+    <h2>Connect with Timothy</h2>
+    <form action="https://timothyivaikin.com/submit-form" method="post">
         <input type="text" name="name" placeholder="Full Name" required>
         <input type="email" name="email" placeholder="Corporate Email" required>
         <input type="tel" name="phone" placeholder="Contact Number" required>
-        <textarea name="message" rows="5" placeholder="How can we assist you?" required></textarea>
+        <textarea name="message" rows="5" placeholder="How can Timothy assist you?" required></textarea>
         <button type="submit" class="btn">Submit Inquiry</button>
     </form>
 </section>
 
 <footer>
-    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-    <p><a href="mailto:contact@yourdomain.com" style="color:#e67e22;">contact@yourdomain.com</a> | <a href="tel:+1234567890" style="color:#e67e22;">+1 (234) 567-890</a></p>
+    <p>&copy; 2024 Timothy Ivaikin. All rights reserved.</p>
+    <p>
+        <a href="mailto:contact@timothyivaikin.com">contact@timothyivaikin.com</a> |
+        <a href="https://www.linkedin.com/in/timothyivaikin" target="_blank">LinkedIn</a> |
+        <a href="https://medium.com/@timothyivaikin" target="_blank">Medium</a>
+    </p>
 </footer>
 
 </body>
